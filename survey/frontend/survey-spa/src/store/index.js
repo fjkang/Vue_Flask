@@ -17,16 +17,22 @@ const actions = {
     // 用于处理异步操作
     loadSurveys(context) {
         return fetchSurveys()
-            .then((response) => context.commit('setSurveys', { surveys: response }))
+            .then((response) => {
+                context.commit('setSurveys', { surveys: response.data.surveys })
+                // 这里是response.data.surveys不是response.data
+            })
     },
     loadSurvey(context, { id }) {
         return fetchSurvey(id)
-            .then((response) => context.commit('setSurvey', { survey: response }))
-    },
+          .then((response) => {
+            context.commit('setSurvey', { survey: response.data.survey })
+          })
+      },
     addSurveyResponse(context) {
         return saveSurveyResponse(context.state.currentSurvey)
     },
     submitNewSurbey(context, survey) {
+        // console.log(survey)
         return postNewSurvey(survey)
     }
 }

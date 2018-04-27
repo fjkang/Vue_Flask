@@ -11,8 +11,8 @@
     <div class="container">
       <div class="card" v-for="survey in surveys" v-bind:key="survey.id">
         <div class="card-content">
-          <p class="title">{{ survey.name}}</p>
-          <p class='subtitle'>{{ survey.created_at.toDateString() }}</p>
+          <p class="title">{{ survey.name }}</p>
+          <p class='subtitle'>{{ survey.created_at }}</p>
         </div>
         <div class="card-footer">
           <router-link :to="`surveys/${survey.id}`" class="card-footer-item">Take Survey</router-link>
@@ -30,7 +30,7 @@ export default {
     surveys: state => state.surveys
   }),
   beforeMount() {
-    this.$store.dispatch('loadSurveys');
+    this.$store.dispatch("loadSurveys");
   }
 };
 </script>
