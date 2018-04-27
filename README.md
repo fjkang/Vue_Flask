@@ -37,7 +37,6 @@ survey的容器,展示每个survey的内容
  数组，包含当前匹配的路径中所包含的所有片段所对应的配置参数对象。
 7. $route.name    当前路径名字
 
-
 #### $router
 1. 字符串
 this.$router.push('home')
@@ -63,7 +62,7 @@ push方法其实和<router-link :to="...">是等同的。
 
 ------------------------
 ### Vuex下的四个属性
-state:单一状态树
-getter:store的计算属性
-mutation:更改store中的状态
-action:与mutation类似,但是提交mutation,不是直接变更状态
+ state:储存状态数据,类似于之前data的作用
+ getter:获取数据,类似computed
+ mutation:定义修改state的方法
+ action:定义与state交互的方法,然后再把数据指定分发到mutation中的方法去执行
