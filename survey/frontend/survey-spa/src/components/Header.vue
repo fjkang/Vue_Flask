@@ -8,6 +8,9 @@
       <router-link to="/surveys" class="navbar-item">
         Create Survey
       </router-link>
+      <router-link to="/results" class="navbar-item">
+        Survey Results
+      </router-link>
     </div>
   </div>
 </nav> 
