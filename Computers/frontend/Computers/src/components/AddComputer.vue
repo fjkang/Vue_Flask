@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="text-center">
-      <h2>修改电脑信息</h2>
+      <h2>添加电脑信息</h2>
     </div>
     <div class="container">
       <form>
