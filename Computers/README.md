@@ -21,7 +21,8 @@
 ### Mongodb:
 + 文档型数据库,与json基本无缝的转换,让数据的流转更顺畅
 
-
+==========================
+## 笔记:
 ### 链接mongo数据库代码
 ~~~bash
 mongodb://[username:password@]host1[:port1][,host2[:port2],...[,hostN[:portN]]][/[database][?options]]
