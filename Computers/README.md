@@ -1,3 +1,27 @@
+## 使用前端(vue.js+bootst)+跨域代理(axios)+后端(flask-restful)+数据库(Mongodb)
+* vue:
+1. vuex:
++ state->存储数据状态
++ actions->组件中通过dispatch激活的方法
++ mutations->action通过commit提交对state进行更改的方法
+2. vue-router:
++ this.$router.push():改变<router-view/>中显示的内容,达到页面跳转的效果
+
+* bootstrap:
++ bootstrap的安装和引用
+
+* axios:
++ 使用axios的get\post\put\delete方法,获取后台api放回的数据
+
+* flask:
+1. CROS:打开/api路径下跨域请求的限制
+2. PyMongo:与mango数据库通信的模块
+3. RESTful:定义get\post\put\delete获取Resource的逻辑
+
+* Mongodb:
++ 文档型数据库,与json基本无缝的转换,让数据的流转更顺畅
+
+
 ### 链接mongo数据库代码
 ~~~bash
 mongodb://[username:password@]host1[:port1][,host2[:port2],...[,hostN[:portN]]][/[database][?options]]
