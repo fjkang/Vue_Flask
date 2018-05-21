@@ -1,3 +1,17 @@
+## Computers--->公司内部电脑资料的管理
+* 界面展示:
+显示所有电脑:
+![image](http://p190map6r.bkt.clouddn.com/computer_list.png)
+
+添加电脑:
+![image](http://p190map6r.bkt.clouddn.com/computer_add.png)
+
+修改电脑:
+![image](http://p190map6r.bkt.clouddn.com/computer_update.png)
+
+删除电脑:
+![image](http://p190map6r.bkt.clouddn.com/computer_delete.png)
+
 ## 使用前端(vue.js+bootst)+跨域代理(axios)+后端(flask-restful)+数据库(Mongodb)
 ### vue:
 1. vuex:
